@@ -16,14 +16,15 @@ struct MenuTableView: View {
     
     var body: some View {
         List(menuItems) { menuItem in
-            Text(menuItem.name)
+            NavigationLink(destination: MenuItemDetailView(menuItem: menuItem)) {
+                Text(menuItem.name)
+            }
         }.navigationBarTitle(self.category)
         .onAppear(perform: self.fetchMenuItem)
     }
     
     private func fetchMenuItem() {
         MenuController.shared.fetchMenuItems(forCategory: category) { (menuItems) in
-            print(menuItems)
             if let menuItems = menuItems {
                 self.menuItems = menuItems
             }

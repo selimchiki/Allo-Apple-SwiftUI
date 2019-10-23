@@ -20,6 +20,7 @@
 		F49ECA0B236096E80037889F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA0A236096E80037889F /* MenuController.swift */; };
 		F49ECA0E23609B510037889F /* CategoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA0D23609B510037889F /* CategoryTableView.swift */; };
 		F49ECA1023609F280037889F /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA0F23609F280037889F /* MenuTableView.swift */; };
+		F49ECA122360B50B0037889F /* MenuItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA112360B50A0037889F /* MenuItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F49ECA0A236096E80037889F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		F49ECA0D23609B510037889F /* CategoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableView.swift; sourceTree = "<group>"; };
 		F49ECA0F23609F280037889F /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
+		F49ECA112360B50A0037889F /* MenuItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				F49EC9F02360930C0037889F /* ContentView.swift */,
 				F49ECA0D23609B510037889F /* CategoryTableView.swift */,
 				F49ECA0F23609F280037889F /* MenuTableView.swift */,
+				F49ECA112360B50A0037889F /* MenuItemDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				F49ECA0E23609B510037889F /* CategoryTableView.swift in Sources */,
 				F49ECA022360951C0037889F /* MenuItem.swift in Sources */,
 				F49ECA04236095EE0037889F /* Categories.swift in Sources */,
+				F49ECA122360B50B0037889F /* MenuItemDetailView.swift in Sources */,
 				F49EC9EF2360930C0037889F /* SceneDelegate.swift in Sources */,
 				F49EC9F12360930C0037889F /* ContentView.swift in Sources */,
 				F49ECA082360963F0037889F /* Order.swift in Sources */,
