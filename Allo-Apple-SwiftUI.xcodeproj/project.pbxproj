@@ -18,6 +18,8 @@
 		F49ECA06236096060037889F /* PreparationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA05236096060037889F /* PreparationTime.swift */; };
 		F49ECA082360963F0037889F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA072360963F0037889F /* Order.swift */; };
 		F49ECA0B236096E80037889F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA0A236096E80037889F /* MenuController.swift */; };
+		F49ECA0E23609B510037889F /* CategoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA0D23609B510037889F /* CategoryTableView.swift */; };
+		F49ECA1023609F280037889F /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA0F23609F280037889F /* MenuTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F49ECA05236096060037889F /* PreparationTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationTime.swift; sourceTree = "<group>"; };
 		F49ECA072360963F0037889F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F49ECA0A236096E80037889F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		F49ECA0D23609B510037889F /* CategoryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableView.swift; sourceTree = "<group>"; };
+		F49ECA0F23609F280037889F /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				F49EC9F02360930C0037889F /* ContentView.swift */,
+				F49ECA0D23609B510037889F /* CategoryTableView.swift */,
+				F49ECA0F23609F280037889F /* MenuTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49ECA1023609F280037889F /* MenuTableView.swift in Sources */,
 				F49ECA0B236096E80037889F /* MenuController.swift in Sources */,
 				F49ECA06236096060037889F /* PreparationTime.swift in Sources */,
 				F49EC9ED2360930C0037889F /* AppDelegate.swift in Sources */,
+				F49ECA0E23609B510037889F /* CategoryTableView.swift in Sources */,
 				F49ECA022360951C0037889F /* MenuItem.swift in Sources */,
 				F49ECA04236095EE0037889F /* Categories.swift in Sources */,
 				F49EC9EF2360930C0037889F /* SceneDelegate.swift in Sources */,

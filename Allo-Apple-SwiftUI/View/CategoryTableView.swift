@@ -9,8 +9,26 @@
 import SwiftUI
 
 struct CategoryTableView: View {
+    
+    @State var categories = [String]()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(categories, id: \.self) { categorie in
+                NavigationLink(destination: MenuTableView(category: categorie)) {
+                    Text(categorie)
+                }
+            }.navigationBarTitle("Allo-Apple")
+            .onAppear(perform: self.fetchCategories)
+        }
+    }
+    
+    private func fetchCategories() {
+        MenuController.shared.fetchCategories { (categories) in
+            if let categories = categories {
+                self.categories = categories
+            }
+        }
     }
 }
 
