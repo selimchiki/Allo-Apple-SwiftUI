@@ -17,6 +17,7 @@
 		F49ECA04236095EE0037889F /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA03236095EE0037889F /* Categories.swift */; };
 		F49ECA06236096060037889F /* PreparationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA05236096060037889F /* PreparationTime.swift */; };
 		F49ECA082360963F0037889F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA072360963F0037889F /* Order.swift */; };
+		F49ECA0B236096E80037889F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49ECA0A236096E80037889F /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F49ECA03236095EE0037889F /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		F49ECA05236096060037889F /* PreparationTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationTime.swift; sourceTree = "<group>"; };
 		F49ECA072360963F0037889F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		F49ECA0A236096E80037889F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		F49EC9EB2360930C0037889F /* Allo-Apple-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F49ECA09236096D70037889F /* Controller */,
 				F49ECA002360950A0037889F /* Model */,
 				F49EC9EC2360930C0037889F /* AppDelegate.swift */,
 				F49EC9EE2360930C0037889F /* SceneDelegate.swift */,
@@ -93,6 +96,14 @@
 				F49ECA072360963F0037889F /* Order.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F49ECA09236096D70037889F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F49ECA0A236096E80037889F /* MenuController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49ECA0B236096E80037889F /* MenuController.swift in Sources */,
 				F49ECA06236096060037889F /* PreparationTime.swift in Sources */,
 				F49EC9ED2360930C0037889F /* AppDelegate.swift in Sources */,
 				F49ECA022360951C0037889F /* MenuItem.swift in Sources */,
