@@ -31,7 +31,7 @@ class MenuController {
         
         let initialMenuURL = baseURL.appendingPathComponent("menu")
         var components = URLComponents(url: initialMenuURL, resolvingAgainstBaseURL: true)!
-        components.queryItems = [URLQueryItem(name: "menu", value: categoryName)]
+        components.queryItems = [URLQueryItem(name: "category", value: categoryName)]
         let menuURL = components.url!
         
         let task = URLSession.shared.dataTask(with: menuURL) { (data, response, error) in
