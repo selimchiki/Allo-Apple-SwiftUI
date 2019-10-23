@@ -12,10 +12,21 @@ struct MenuTableView: View {
     
     var category: String
     
+    @State var menuItems = [MenuItem]()
+    
     var body: some View {
-        List {
-            Text("Hello World!")
-            Text(category)
+        List(menuItems) { menuItem in
+            Text(menuItem.name)
+        }.navigationBarTitle(self.category)
+        .onAppear(perform: self.fetchMenuItem)
+    }
+    
+    private func fetchMenuItem() {
+        MenuController.shared.fetchMenuItems(forCategory: category) { (menuItems) in
+            print(menuItems)
+            if let menuItems = menuItems {
+                self.menuItems = menuItems
+            }
         }
     }
 }
