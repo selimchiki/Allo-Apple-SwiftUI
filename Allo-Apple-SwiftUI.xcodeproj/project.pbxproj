@@ -66,11 +66,11 @@
 		F49EC9EB2360930C0037889F /* Allo-Apple-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F49ECA0C23609B000037889F /* View */,
 				F49ECA09236096D70037889F /* Controller */,
 				F49ECA002360950A0037889F /* Model */,
 				F49EC9EC2360930C0037889F /* AppDelegate.swift */,
 				F49EC9EE2360930C0037889F /* SceneDelegate.swift */,
-				F49EC9F02360930C0037889F /* ContentView.swift */,
 				F49EC9F2236093200037889F /* Assets.xcassets */,
 				F49EC9F7236093200037889F /* LaunchScreen.storyboard */,
 				F49EC9FA236093200037889F /* Info.plist */,
@@ -104,6 +104,14 @@
 				F49ECA0A236096E80037889F /* MenuController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F49ECA0C23609B000037889F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F49EC9F02360930C0037889F /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
