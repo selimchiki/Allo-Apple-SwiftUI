@@ -12,14 +12,47 @@ struct OrderView: View {
 
     @EnvironmentObject var order: Order
     
+    @State var alert = false
+    @State var acceptSubmit = false
+    
     var body: some View {
         NavigationView {
-            List(order.menuItems) { item in
-                Text(item.name)
+            List {
+                ForEach(order.menuItems) { item in
+                    HStack {
+                        Text(item.name)
+                        Text(String(format: "$%.2F", item.price))
+                            .font(.footnote)
+                    }
+                }
+                .onDelete(perform: delete)
+                order.menuItems.isEmpty ? Text("") : Text("Total: " + String(format: "$%.2f", order.total))
+                    .font(.headline)
+                    .fontWeight(.medium)
             }
             .navigationBarTitle("Your Order")
+            .navigationBarItems(leading: EditButton(), trailing: order.menuItems.isEmpty ? nil : Button(action: {
+                    self.alert = true
+                }, label: {
+                    Text("Submit Order")
+                })
+                .alert(isPresented: $alert) {
+                    Alert(title: Text("Confirm Order"), message: Text("You are about to submit your order with a total of \(String(format: "$%.2f", order.total))"), primaryButton: .default(Text("Submit"), action: {
+                            self.acceptSubmit = true
+                        }), secondaryButton: .cancel(Text("Cancel"))
+                    )
+                }
+                .sheet(isPresented: $acceptSubmit) {
+                    PreparationTimeView(order: self.order)
+                }
+            )
         }
     }
+    
+    private func delete(at offsets: IndexSet) {
+        order.menuItems.remove(atOffsets: offsets)
+    }
+    
 }
 
 struct OrderView_Previews: PreviewProvider {
