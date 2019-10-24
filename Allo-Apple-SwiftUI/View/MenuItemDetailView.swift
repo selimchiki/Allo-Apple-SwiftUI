@@ -12,6 +12,8 @@ struct MenuItemDetailView: View {
     
     var menuItem: MenuItem
     
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         VStack {
             Image(uiImage: UIImage())
@@ -31,18 +33,20 @@ struct MenuItemDetailView: View {
             }
             Spacer()
             Button(action: {
-                print("Menu Item add to order")
+                self.order.menuItems.append(self.menuItem)
             }, label: {
-                Text("Add To Order")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
+                HStack {
+                    Image(systemName: "cart.badge.plus")
+                        .foregroundColor(Color.white)
+                    Text("Add")
+                        .foregroundColor(Color.white)
+                        
+                }
             })
-                .padding(10)
+                .padding(20)
                 .padding(.horizontal, 100)
                 .background(Color.blue)
                 .cornerRadius(25.0)
-                .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
                 
         }.padding()
     }

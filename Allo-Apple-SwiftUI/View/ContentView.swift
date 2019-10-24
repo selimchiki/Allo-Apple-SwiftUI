@@ -9,8 +9,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var order: Order
+    
     var body: some View {
-        CategoryTableView()
+        TabView {
+            CategoryTableView()
+                .tag(0)
+                .tabItem({
+                    VStack {
+                        Image(systemName: "bag.fill")
+                        Text("Menu")
+                    }
+                })
+            OrderView()
+                .tag(1)
+                .tabItem({
+                    Image(systemName: "cart.fill")
+                    
+                    Text("Your Order")
+                })
+        }
     }
 }
 

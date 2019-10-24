@@ -8,11 +8,13 @@
 
 import Foundation
 
-struct Order: Codable {
+class Order: ObservableObject {
     
-    var menuItems: [MenuItem]
+    @Published var menuItems: [MenuItem]
     
     init(menuItems: [MenuItem] = []) {
         self.menuItems = menuItems
     }
+    
+    
 }

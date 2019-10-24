@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42EE70A2361B8F1006C1FCE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EE7092361B8F1006C1FCE /* OrderView.swift */; };
 		F49EC9ED2360930C0037889F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC9EC2360930C0037889F /* AppDelegate.swift */; };
 		F49EC9EF2360930C0037889F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC9EE2360930C0037889F /* SceneDelegate.swift */; };
 		F49EC9F12360930C0037889F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EC9F02360930C0037889F /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F42EE7092361B8F1006C1FCE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		F49EC9E92360930C0037889F /* Allo-Apple-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allo-Apple-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49EC9EC2360930C0037889F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49EC9EE2360930C0037889F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				F49ECA0D23609B510037889F /* CategoryTableView.swift */,
 				F49ECA0F23609F280037889F /* MenuTableView.swift */,
 				F49ECA112360B50A0037889F /* MenuItemDetailView.swift */,
+				F42EE7092361B8F1006C1FCE /* OrderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				F49ECA04236095EE0037889F /* Categories.swift in Sources */,
 				F49ECA122360B50B0037889F /* MenuItemDetailView.swift in Sources */,
 				F49EC9EF2360930C0037889F /* SceneDelegate.swift in Sources */,
+				F42EE70A2361B8F1006C1FCE /* OrderView.swift in Sources */,
 				F49EC9F12360930C0037889F /* ContentView.swift in Sources */,
 				F49ECA082360963F0037889F /* Order.swift in Sources */,
 			);
