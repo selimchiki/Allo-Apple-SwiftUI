@@ -21,14 +21,20 @@ struct OrderView: View {
                 ForEach(order.menuItems) { item in
                     HStack {
                         Text(item.name)
+                        Spacer()
                         Text(String(format: "$%.2F", item.price))
                             .font(.footnote)
                     }
                 }
                 .onDelete(perform: delete)
-                order.menuItems.isEmpty ? Text("") : Text("Total: " + String(format: "$%.2f", order.total))
-                    .font(.headline)
-                    .fontWeight(.medium)
+                HStack {
+                    Spacer()
+                    order.menuItems.isEmpty ? Text("") : Text("Total: " + String(format: "$%.2f", order.total))
+                        .font(.headline)
+                        .fontWeight(.medium)
+                    Spacer()
+                }
+                
             }
             .navigationBarTitle("Your Order")
             .navigationBarItems(leading: EditButton(), trailing: order.menuItems.isEmpty ? nil : Button(action: {
